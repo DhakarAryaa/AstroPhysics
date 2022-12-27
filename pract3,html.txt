@@ -1,0 +1,9 @@
+<html>
+<body>
+
+<center><h1>Information page</h1></center>
+<video width="400" height="300" controls>
+<source src="bh.mp4" type="video/mp4">
+<video>
+</body>
+</html>
