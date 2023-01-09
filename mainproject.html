@@ -12,6 +12,8 @@
   function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
   }
+
+	};
   </script>
   <style>
   h1.a{font-size:50px;color:yellow}
@@ -26,39 +28,72 @@
   .dropdown-content{display:block;}
   .dropdown:hover  .dropbtn{background-color:#009999;}
   div.a{width:90%;}
+  body{
+    background-color: #efefef;
+  }
+  /* Adding styles to button */
+  /* Ripple effect */
+.ripple {
+background-position: center;
+transition: background 0.8s;
+}
+.ripple:hover {
+background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+background-color: #6eb9f7;
+background-size: 100%;
+transition: background 0s;
+}
+
+/* Button style */
+button {
+border: none;
+border-radius: 2px;
+padding: 12px 18px;
+font-size: 16px;
+text-transform: uppercase;
+cursor: pointer;
+color: white;
+background-color: #2196f3;
+box-shadow: 0 0 4px #999;
+outline: none;
+}
+
+  }
 </style>
 </head>
 <body style="background-image:url('smb.jpg');background-size:110%">
   <center>
-    <iframe src="home.html" name="tl" width="15%" height="15%" scrolling="no" border="0"></iframe>
-    <iframe src="title.html" name="tc" width="60%" height="15%" scrolling="no"></iframe>
+    <iframe src="home.html" name="tl" width="15%" height="15%" frameborder="0" scrolling="no" border="0"></iframe>
+    <iframe src="title.html" name="tc" width="60%" height="15%" frameborder="0" scrolling="no"></iframe>
     <br>
     <br>
       <div class="a">
         <div class="dropdown" style="float:right">
-          <button class="dropbtn">On this page</button>
+          <button class="dropbtn" class="ripple">On this page</button>
           <div class="dropdown-content">
-            <a href=".\Blackhole.html" target="search_iframe"> Blackholes </a>
-            <a href=".\Galaxies.html" target="search_iframe"> Galaxies </a>
-            <a href="https://www.wtamu.edu/~cbaird/sq/2022/08/02/are-there-different-types-of-black-holes/" target="search_iframe"> Physics of Stars </a>
-            <a href="#" target="search_iframe"> Cosmology </a>
-            <a href="#" target="search_iframe"> Dark Matter </a>
-            <a href="#" target="search_iframe"> Relativity </a>
-            <a href="#" target="search_iframe"> Exoplanets </a>
+            <a href=".\Blackhole.html" class="ripple" target="search_iframe"> Blackholes </a>
+            <a href=".\Galaxies.html" class="ripple" target="search_iframe"> Galaxies </a>
+            <a href="https://www.wtamu.edu/~cbaird/sq/2022/08/02/are-there-different-types-of-black-holes/" class="ripple" target="search_iframe"> Physics of Stars </a>
+            <a href="#" class="ripple" target="search_iframe"> Cosmology </a>
+            <a href="#" class="ripple" target="search_iframe"> Dark Matter </a>
+            <a href="#" class="ripple" target="search_iframe"> Relativity </a>
+            <a href="#" class="ripple" target="search_iframe"> Exoplanets </a>
             <!--  <button id="button">Button</button> -->
             <div id="iframeHolder"></div>
           </div>
         </div>
       <div class="a">
         <div class="dropdown" style="float:right">
-          <button class="dropbtn">Contact us</button>
+          <button class="dropbtn" class="ripple">Contact us</button>
           <div class="dropdown-content">
-            <a href="https://www.wtamu.edu/~cbaird/sq/2022/08/02/are-there-different-types-of-black-holes/"> Email? </a>
+            <a href="https://www.wtamu.edu/~cbaird/sq/2022/08/02/are-there-different-types-of-black-holes/" class="ripple"> Email? </a>
           </div>
         </div>
       </div>
       <br><br><br><br>
-      <iframe src=".\Blackhole.html"  width="80%" name="search_iframe" frameborder="0" onload="resizeIframe(this)"></iframe>
+      <iframe src=".\Blackhole.html"  width="80%" height="68%" name="search_iframe" frameborder="0" onreset="resizeIframe(this)"></iframe>
     </center>
   </div>
   <br>----------------------------------------
