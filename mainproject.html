@@ -61,9 +61,32 @@ outline: none;
 }
 
   }
+  body, html {
+    height: 100%;
+  }
+
+  .parallax {
+    background-image: url('smb.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 </style>
 </head>
 <body style="background-image:url('smb.jpg');background-size:110%">
+  <div class="parallax"></div>
+
+  <div style="height:100px;background-color:red;font-size:36px">
+My website's down below!
+  </div>
+
+  <div class="parallax"></div>
+
+<main>
+  <p>My website's down below!</p>
+</main>
   <center>
     <iframe src="home.html" name="tl" width="15%" height="15%" frameborder="0" scrolling="no" border="0"></iframe>
     <iframe src="title.html" name="tc" width="60%" height="15%" frameborder="0" scrolling="no"></iframe>
@@ -74,8 +97,8 @@ outline: none;
           <button class="dropbtn" class="ripple">On this page</button>
           <div class="dropdown-content">
             <a href=".\Blackhole.html" class="ripple" target="search_iframe"> Blackholes </a>
-            <a href=".\Galaxies.html" class="ripple" target="search_iframe"> Galaxies </a>
-            <a href="https://www.wtamu.edu/~cbaird/sq/2022/08/02/are-there-different-types-of-black-holes/" class="ripple" target="search_iframe"> Physics of Stars </a>
+            <a href="./Galaxies.html" class="ripple" target="search_iframe"> Galaxies </a>
+            <a href="./PoS.html" class="ripple" target="search_iframe"> Physics of Stars </a>
             <a href="#" class="ripple" target="search_iframe"> Cosmology </a>
             <a href="#" class="ripple" target="search_iframe"> Dark Matter </a>
             <a href="#" class="ripple" target="search_iframe"> Relativity </a>
