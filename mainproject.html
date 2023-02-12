@@ -16,17 +16,14 @@
 	};
   </script>
   <style>
-  h1.a{font-size:50px;color:yellow}
-  h1.b{font-size:60px;color:red;font-family:cooper}
-  img{border-radius:90px; box-shadow:10px 10px 10px yellow}
   .dropbtn{background-color:#3366ff;box-shadow:2px 2px; color:black;padding:16px;font-size:16px;border:none;}
   .dropdown{position:relative;display:inline-block:}
   .dropdown-content{display:none;position:absolute;background- color:#f1f1f1;min-width:160px;box-shadow:0px 8px 8px grey;z-index:1:}
-  .dropdown-content a{color:#ccffff;padding:12px 16px;text-decoration:none; display:block;}
-  .dropdown-content a:hover{background-color:#000066;}
+  .dropdown-content a{color:#D14747;padding:12px 16px;text-decoration:none; display:block;}
+  .dropdown-content a:hover{background-color:#3366ff;}
   .dropdown:hover
   .dropdown-content{display:block;}
-  .dropdown:hover  .dropbtn{background-color:#009999;}
+  .dropdown:hover  .dropbtn{background-color:#6C9498;}
   div.a{width:90%;}
   body{
     background-color: #efefef;
@@ -38,7 +35,7 @@ background-position: center;
 transition: background 0.8s;
 }
 .ripple:hover {
-background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+background: #6C9498 radial-gradient(circle, transparent 1%, #6C9498 1%) center/15000%;
 }
 .ripple:active {
 background-color: #6eb9f7;
@@ -66,19 +63,31 @@ outline: none;
   }
 
   .parallax {
-    background-image: url('smb.jpg');
-    height: 100%;
+    background-image: url('prof.jpg');
+    height: 50%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+.search-box{
+  width: 15%;
+  display: flex;
+  padding-bottom: 3px;
+  border-borrom:1px solid #ddd;
+  margin: 10px 0 3px;
+}
+.sbicon img{
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
 </style>
 </head>
 <body style="background-image:url('smb.jpg');background-size:110%">
   <div class="parallax"></div>
 
-  <div style="height:100px;background-color:red;font-size:36px">
+  <div style="height:100px;background-color:#509BC3;font-size:36px">
 My website's down below!
   </div>
 
@@ -88,21 +97,22 @@ My website's down below!
   <p>My website's down below!</p>
 </main>
   <center>
-    <iframe src="home.html" name="tl" width="15%" height="15%" frameborder="0" scrolling="no" border="0"></iframe>
     <iframe src="title.html" name="tc" width="60%" height="15%" frameborder="0" scrolling="no"></iframe>
     <br>
     <br>
+
       <div class="a">
         <div class="dropdown" style="float:right">
           <button class="dropbtn" class="ripple">On this page</button>
           <div class="dropdown-content">
-            <a href=".\Blackhole.html" class="ripple" target="search_iframe"> Blackholes </a>
+            <a href="./Blackhole.html" class="ripple" target="search_iframe"> Blackholes </a>
             <a href="./Galaxies.html" class="ripple" target="search_iframe"> Galaxies </a>
             <a href="./PoS.html" class="ripple" target="search_iframe"> Physics of Stars </a>
-            <a href="#" class="ripple" target="search_iframe"> Cosmology </a>
-            <a href="#" class="ripple" target="search_iframe"> Dark Matter </a>
-            <a href="#" class="ripple" target="search_iframe"> Relativity </a>
-            <a href="#" class="ripple" target="search_iframe"> Exoplanets </a>
+            <a href="./principlesofcos.html" class="ripple" target="search_iframe"> Cosmology </a>
+            <a> Additional information </a>
+            <p><a href="https://www.wtamu.edu/~cbaird/sq/2014/07/25/is-there-any-difference-between-antimatter-dark-matter-dark-energy-and-degenerate-matter/" class="ripple" target="search_iframe"> Dark Matter </a></p>
+            <p><a href="https://www.planetary.org/worlds/exoplanets" class="ripple" target="search_iframe"> Exoplanets </a></p>
+            <a href="./sources.html" class="ripple" target="search_iframe"> Credits </a>
             <!--  <button id="button">Button</button> -->
             <div id="iframeHolder"></div>
           </div>
@@ -115,11 +125,20 @@ My website's down below!
           </div>
         </div>
       </div>
+      <div class="a">
+        <div class="dropdown" style="float:right">
+          <button class="dropbtn" class="ripple" onclick="window.scrollTo(0, 0);">Home</button>
+        </div>
+        <div class="search-box">
+          <img src="sbicon.jpg" align="left">
+          <input type="text" align="left">
+        </div>
+      </div>
       <br><br><br><br>
-      <iframe src=".\Blackhole.html"  width="80%" height="68%" name="search_iframe" frameborder="0" onreset="resizeIframe(this)"></iframe>
+      <iframe src=".\initialdisplay.html"  width="80%" height="68%" name="search_iframe" frameborder="0" onreset="resizeIframe(this)"></iframe>
     </center>
   </div>
   <br>----------------------------------------
-  <rssapp-wall id="tgu7xafTwDaswPLC"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+<rssapp-wall id="t4AnBIFKdfhSup1J"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 </body>
 </html>
