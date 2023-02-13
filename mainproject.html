@@ -42,8 +42,6 @@ background-color: #6eb9f7;
 background-size: 100%;
 transition: background 0s;
 }
-
-/* Button style */
 button {
 border: none;
 border-radius: 2px;
@@ -56,12 +54,10 @@ background-color: #2196f3;
 box-shadow: 0 0 4px #999;
 outline: none;
 }
-
   }
   body, html {
     height: 100%;
   }
-
   .parallax {
     background-image: url('prof.jpg');
     height: 50%;
@@ -70,29 +66,48 @@ outline: none;
     background-repeat: no-repeat;
     background-size: cover;
   }
-.search-box{
+.form{
   width: 15%;
   display: flex;
   padding-bottom: 3px;
-  border-borrom:1px solid #ddd;
+  border-bottom:1px solid #ddd;
   margin: 10px 0 3px;
 }
-.sbicon img{
-  height: 25px;
-  width: 25px;
+.form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+.form button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border: none;
   cursor: pointer;
+  outline: none;
+  letter-spacing: 1px;
+}
+form. fa-search{
+  align-self: center;
+  padding: 10px 20px;
+  color: #777;
 }
 </style>
+<script src="https://kit.fontawesome.com/fd05b04819.js" crossorigin="anonymous"></script>
 </head>
-<body style="background-image:url('smb.jpg');background-size:110%">
+<body style="background-image:url('smb.jpg');background-size:100%">
   <div class="parallax"></div>
-
   <div style="height:100px;background-color:#509BC3;font-size:36px">
 My website's down below!
   </div>
-
   <div class="parallax"></div>
-
 <main>
   <p>My website's down below!</p>
 </main>
@@ -100,7 +115,6 @@ My website's down below!
     <iframe src="title.html" name="tc" width="60%" height="15%" frameborder="0" scrolling="no"></iframe>
     <br>
     <br>
-
       <div class="a">
         <div class="dropdown" style="float:right">
           <button class="dropbtn" class="ripple">On this page</button>
@@ -111,9 +125,8 @@ My website's down below!
             <a href="./principlesofcos.html" class="ripple" target="search_iframe"> Cosmology </a>
             <a> Additional information </a>
             <p><a href="https://www.wtamu.edu/~cbaird/sq/2014/07/25/is-there-any-difference-between-antimatter-dark-matter-dark-energy-and-degenerate-matter/" class="ripple" target="search_iframe"> Dark Matter </a></p>
-            <p><a href="https://www.planetary.org/worlds/exoplanets" class="ripple" target="search_iframe"> Exoplanets </a></p>
+            <p><a href="http://exoplanet.eu/" class="ripple" target="search_iframe"> Exoplanets </a></p>
             <a href="./sources.html" class="ripple" target="search_iframe"> Credits </a>
-            <!--  <button id="button">Button</button> -->
             <div id="iframeHolder"></div>
           </div>
         </div>
@@ -130,8 +143,11 @@ My website's down below!
           <button class="dropbtn" class="ripple" onclick="window.scrollTo(0, 0);">Home</button>
         </div>
         <div class="search-box">
-          <img src="sbicon.jpg" align="left">
-          <input type="text" align="left">
+          <form>
+            <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Search</button>
+          </form>
         </div>
       </div>
       <br><br><br><br>
